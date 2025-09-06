@@ -31,3 +31,36 @@ body {
   main {
     padding: 2em;
   }
+  .center{
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin: auto;
+  }
+  .justified{
+    text-align: justify;
+  }
+  ul li{
+    padding: 5px 0;
+  }
+  .italicized{
+    font-style: italic;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  nav a:hover{
+    color: #fbc100;
+    transform: scale(1.1);
+  }
+  h4 a:hover{
+    color: #0057a9;
+    transform: scale(1.1);
+  }
+  
+
+  
+  
