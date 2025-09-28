@@ -58,6 +58,7 @@
             }
             for (var key in store) {
                 ajax(key, store[key]);
+                document.dispatchEvent(new Event("htmlinclude-loaded")); // added by Diego Mendoza
             }
         }
     }
@@ -84,9 +85,15 @@ function updatePageTitle() {
       <span> </span>
       <span class="title-letter">C</span><span class="title-letter">o</span><span class="title-letter">n</span><span class="title-letter">t</span><span class="title-letter">r</span><span class="title-letter">a</span><span class="title-letter">c</span><span class="title-letter">t</span>`;
       break;
+
+    case "website_evaluations.html":
+      pageTitle.innerHTML = `<span class="title-letter">W</span><span class="title-letter">e</span><span class="title-letter">b</span><span class="title-letter">s</span><span class="title-letter">i</span><span class="title-letter">t</span><span class="title-letter">e</span>
+      <span> </span>
+      <span class="title-letter">E</span><span class="title-letter">v</span><span class="title-letter">a</span><span class="title-letter">l</span><span class="title-letter">u</span><span class="title-letter">a</span><span class="title-letter">t</span><span class="title-letter">i</span><span class="title-letter">o</span><span class="title-letter">n</span><span class="title-letter">s</span>`;
+      break;
   }
+  pageTitle.classList.add("visible");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(updatePageTitle, 100);
-});
+document.addEventListener("htmlinclude-loaded", updatePageTitle);
+
