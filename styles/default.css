@@ -163,3 +163,40 @@ main{
     width: 90%;
   }
 }
+/* Tables Styling */
+.table-section {
+  background-color: #eeeadf;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+tfoot {
+  background-color: #fafafa;
+  font-weight: bold;
+  text-align: center;
+}

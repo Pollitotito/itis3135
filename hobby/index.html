@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+<style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #6f1404;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    a{
+        color: #a1dcbf;
+        text-decoration: none;
+    }
+    header, footer {
+      background-color: #16213e;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      color: #a1dcbf;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #a1dcbf;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      color: #a1dcbf;
+    }
+
+    section {
+      display: none;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      color: #a1dcbf;
+      text-align: center;
+    }
+
+    figure {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #a1dcbf;
+      margin-top: 0.5rem;
+    }
+
+    footer img {
+      width: 88px;
+      height: 31px;
+      margin: 0 5px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="email"] {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #a1dcbf;
+      border: none;
+      color: #16213e;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    button:hover {
+      background-color: #a1dcbf;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;  
+    margin-top: 1rem;
+    }
+
+    th, td {
+    border: 2px solid #bda0a0;    
+    padding: 10px;
+    text-align: center;
+    }
+
+    th {
+    background-color: #16213e;
+    color: white;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>⚽ Soccer</h1>
+    <nav>
+      <a href="#" onclick="showSection('what')">What</a> <span class="divider">⚡</span>
+      <a href="#" onclick="showSection('who')">Who</a> <span class="divider">⚡</span>
+      <a href="#" onclick="showSection('when')">When</a> <span class="divider">⚡</span>
+      <a href="#" onclick="showSection('where')">Where</a> <span class="divider">⚡</span>
+      <a href="#" onclick="showSection('how')">How</a> <span class="divider">⚡</span>
+      <a href="#" onclick="showSection('why')">Why</a>
+    </nav>
+  </header>
+
+  <!-- WHAT -->
+  <section id="what" class="active">
+    <h2>What is Soccer?</h2>
+    <p>Soccer, also called football, is the most popular sport in the world. Two teams of 11 players try to score goals by getting the ball into the opposing team’s net without using their hands.</p>
+    <p>It’s a sport that unites people from every culture and background.</p>
+    <figure>
+      <img src="images/soccer-ball-goal.webp" alt="Soccer ball goal">
+      <figcaption>Soccer ball rolling toward the goal on a green field. (Image source: Google Images)</figcaption>
+    </figure>
+    <p>Soccer is fast, exciting, and full of teamwork.</p>
+  </section>
+
+  <!-- WHO -->
+  <section id="who">
+    <h2>Who Plays Soccer?</h2>
+    <p>Anyone can play soccer! From kids in the park to professionals in big stadiums, the sport is for everyone.</p>
+    <p>I started playing when I was little, and I still play for fun with friends and family.</p>
+    <figure>
+      <img src="images/barca-celeb.webp" alt="Soccer team celebrating">
+      <figcaption>Soccer team celebrating a goal. (Image source: Google Images)</figcaption>
+    </figure>
+    <p>Soccer builds friendships and teamwork skills.</p>
+  </section>
+
+  <!-- WHEN -->
+  <section id="when">
+    <h2>When to Play Soccer</h2>
+    <p>Soccer can be played all year, but many people love playing in spring and fall when the weather is nice.</p>
+    <p>Professional leagues also have regular seasons — like the Premier League or La Liga.</p>
+    <figure>
+      <img src="images/soccer-training.png" alt="Soccer training">
+        <figcaption>Players training on a soccer field in the morning. (Image source: Google Images)</figcaption>
+    </figure>
+    <table style="margin:auto;">
+      <tr><th>Season</th><th>Best Time</th></tr>
+      <tr><td>Spring</td><td>Cool weather, easy to run</td></tr>
+      <tr><td>Summer</td><td>Evening games</td></tr>
+      <tr><td>Fall</td><td>League games & tournaments</td></tr>
+    </table>
+  </section>
+
+  <!-- WHERE -->
+  <section id="where">
+    <h2>Where to Play Soccer</h2>
+    <p>Soccer is played everywhere — parks, fields, stadiums, and even in the street!</p>
+    <ul>
+      <li>🏟️ Stadiums for professional matches</li>
+      <li>🏞️ Parks for casual games</li>
+      <li>🏫 School fields for practices</li>
+    </ul>
+    <figure>
+      <img src="images/estadio.jpg" alt="Soccer stadium">
+      <figcaption>Full soccer stadium during a night match. (Image source: Google Images)</figcaption>
+    </figure>
+  </section>
+
+  <!-- HOW -->
+  <section id="how">
+    <h2>How to Start Playing Soccer</h2>
+    <p>You don’t need much — just a ball, some friends, and a place to play!</p>
+    <p>Learn the basic rules: don’t use your hands, pass, and try to score goals.</p>
+    <figure>
+      <img src="images/soccer_field_dimensions.webp" alt="Soccer field">
+      <figcaption>Soccer field showing boundaries and goalposts. (Image source: Google Images)</figcaption>
+    </figure>
+    <form>
+      <label for="email">Sign up for soccer tips:</label><br>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- WHY -->
+  <section id="why">
+    <h2>Why I Love Soccer</h2>
+    <p>Soccer is more than just a game — it’s a way to connect with people.</p>
+    <p>It keeps me active, builds teamwork, and is just plain fun.</p>
+    <figure>
+      <img src="images/world-cup-trophy.jpg" alt="Soccer trophy">
+      <figcaption>Golden World Cup trophy under stadium lights. (Image source: Google Images)</figcaption>
+    </figure>
+    <p>That feeling when the ball hits the net is unbeatable.</p>
+  </section>
+
+<footer>
+  <hr>
+  <p>Built by <a href="../dmdesigns.co/" target="_blank">DM Designs</a> &copy; 2025</p>
+  <p>
+    <a href="https://validator.w3.org/check?uri=referer">
+      <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS">
+    </a>
+    <a href="https://wave.webaim.org/">
+      <img src="https://wave.webaim.org/img/wavelogo.png" alt="WAVE Accessibility">
+    </a>
+  </p>
+</footer>
+<script>
+    function showSection(sectionId) {
+      document.querySelectorAll('section').forEach((section) => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
+</html>

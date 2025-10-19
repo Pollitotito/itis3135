@@ -91,6 +91,10 @@ function updatePageTitle() {
       <span> </span>
       <span class="title-letter">E</span><span class="title-letter">v</span><span class="title-letter">a</span><span class="title-letter">l</span><span class="title-letter">u</span><span class="title-letter">a</span><span class="title-letter">t</span><span class="title-letter">i</span><span class="title-letter">o</span><span class="title-letter">n</span><span class="title-letter">s</span>`;
       break;
+
+    case "fccfsjs_outline.html":
+        pageTitle.innerHTML = `<span class="title-letter">O</span><span class="title-letter">u</span><span class="title-letter">t</span><span class="title-letter">l</span><span class="title-letter">i</span><span class="title-letter">n</span><span class="title-letter">e</span>`;
+      break;
   }
   pageTitle.classList.add("visible");
 }
