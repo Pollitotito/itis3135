@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Introduction Form | ITIS 3135</title>
+  <link rel="stylesheet" href="styles/default.css"/>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h3 class="center">Please submit the form below</h3>
+
+    <form id="introForm">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" value="Diego" required>
+
+        <label for="middle-name">Middle Name:</label>
+        <input type="text" id="middle-name" name="middle-name" value="A.">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" value="Mendoza" required>
+
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" value="Daring Mamba">
+
+        <label for="statement">Acknowledgment Statement:</label>
+        <input type="text" id="statement" name="statement" value="I acknowledge that the information I present here is public." required>
+
+        <label for="date">Acknowledgment Date:</label>
+        <input type="text" id="date" name="date" value="8/21/2025" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mascot and Image</legend>
+
+        <label for="mascot-adj">Mascot Adjective:</label>
+        <input type="text" id="mascot-adj" name="mascot-adj" value="Daring" required>
+
+        <label for="mascot-animal">Mascot Animal:</label>
+        <input type="text" id="mascot-animal" name="mascot-animal" value="Mamba" required>
+
+        <label for="divider">Divider:</label>
+        <input type="text" id="divider" name="divider" value="|" required>
+
+        <label for="picture">Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*">
+
+        <label for="caption">Picture Caption:</label>
+        <input type="text" id="caption" name="caption" value="Me & Chele 2025">
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Statement</legend>
+        <textarea id="statement-text" name="statement-text" rows="5" required>Hi everyone, my name is Diego Mendoza. I’m from a Nicaraguan background, and I speak both Spanish (native) and English (fluent). I enjoy working out, and I also like making video edits mostly using DaVinci Resolve, though sometimes CapCut. I’m definitely more of a night person, so if we’re hanging out, it’s probably going to be at night.</textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Background Info</legend>
+        <label for="personal-background">Personal Background:</label>
+        <textarea id="personal-background" name="personal-background" rows="3" required>I was born in Florida, but was raised in Nicaragua and moved to the US 4 years ago.
+        </textarea>
+        <label for="academic-background">Academic Background:</label>
+        <textarea id="academic-background" name="academic-background" rows="3" required>I am a junior studying computer science with a concentration in software engineering and a minor in Spanish.
+        </textarea>
+        <label for="computers">Primary Computers:</label>
+        <textarea id="computers" name="computers" rows="2" required>Primary Computer: Apple MacBook, macOS, laptop, portable; Windows Legion 5, Windows 11, laptop, primarily used at home.
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses</legend>
+        <div id="courses-container">
+          <div class="course">
+            <input type="text" name="department" value="ITIS" placeholder="Department" required>
+            <input type="text" name="number" value="3135" placeholder="Number" required>
+            <input type="text" name="course-name" value="Front-End Web App Development" placeholder="Course Name" required>
+            <input type="text" name="reason" value="Required but I'm really interested in learning more about front-end development." placeholder="Reason" required>
+          </div>
+        </div>
+        <button type="button" id="add-course">+ Add Course</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extra Info</legend>
+        <label for="funny-item">Funny/Interesting Item:</label>
+        <textarea id="funny-item" name="funny-item" rows="3">I'm very sarcastic and I like to mess around, some years ago a friend got me into watching the vampire diaries and now I'm rewatching it for the third time because I never finished it.
+        </textarea>
+        <label for="share">Something to Share (optional):</label>
+        <textarea id="share" name="share" rows="3" placeholder="Write something you'd like to share..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quote</legend>
+        <input type="text" id="quote" name="quote" value="Be yourself; everyone else is already taken.">
+        <input type="text" id="author" name="author" value="Oscar Wilde">
+      </fieldset>
+
+
+      <div class="center">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearButton">Clear</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/introductions.js"></script>
+</body>
+</html>
