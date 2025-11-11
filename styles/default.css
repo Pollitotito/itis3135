@@ -211,3 +211,29 @@ form {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+}
+button {
+  background-color: #6272a4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+pre{
+  background-color: #282a36;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  width: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+button:hover {
+  background-color: #50fa7b;
+  color: #000;
+}
